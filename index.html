@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<title>Главная</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="robots" content="index, follow" />
+	<meta name="rating" content="adult" />
+	<meta
+		name="viewport"
+		content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"
+	/>
+	<meta name="description" content="Описание страницы" />
+	<meta name="keywords" content="ключевые слова" />
+	<meta name="author" content="Varlamov Andrew" />
+	<meta name="copyright" content="(c)" />
+	<meta http-equiv="Reply-to" content="varlamov287842king@gmail.com" />
+	<meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate" />
+	<!-- Подключение иконки в браузере -->
+	<link type="image/x-icon" rel="shortcut icon" href="images/favicon.png" />
+	<!-- Подключаем стили проекта -->
+	<link type="text/css" rel="stylesheet" href="css/style.min.css" />
+</head>
+
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<div class="logo">
+				<a class="logo__link" href="#">
+					<img
+						class="logo__icon"
+						src="img/icons/logo.svg"
+						width="188"
+						height="18"
+						alt="Логотип табака для кальянов табак для друзей северный"
+					/>
+				</a>
+			</div>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#" class="menu__link menu__link--current">КАТАЛОГ</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">МИКСЫ</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">ГДЕ КУПИТЬ</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">ПАРТНЕРАМ</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<section class="intro">
+		<div class="swiper-container mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<video controls src="/img/video/video.mp4"></video>
+				</div>
+				<div class="swiper-slide"><video controls src="/img/video/video.mp4"></video></div>
+				<div class="swiper-slide"><video controls src="/img/video/video.mp4"></video></div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</section>
+</header>
+
+			<main class="main">
+				<section class="about">
+	<div class="container">
+		<div class="about__inner">
+			<article class="about__content">
+				<h2 class="about__title title">О БРЕНДЕ</h2>
+				<p class="about__subtitle">
+					Мы создаем Северный, что бы ты с друзьями мог насладиться действительно качественным
+					табаком.
+				</p>
+				<p class="about__subtitle">
+					Мы ценим честность и верность. Наш табак, крепкий, как наша дружба, способен создать
+					атмосферу долгожданной встречи. Вечеринка на природе или посиделки на кухне, Северный
+					всегда будет рядом.
+				</p>
+				<p class="about__subtitle">
+					Создавай миксы, удивляй друзей и пусть общение доставляет только удовольствие.
+				</p>
+			</article>
+			<div class="about__images">
+				<img src="../img/about/about-bg.png" alt="" class="about__icon" />
+			</div>
+		</div>
+	</div>
+</section>
+ <div class="slogan">
+	<div class="_container">
+		<div class="slogan__inner">
+			<ul class="slogan__list">
+				<li class="slogan__item">СЕВЕРНЫЙ - ТАБАК ДЛЯ ДРУЗЕЙ</li>
+				<li class="slogan__item">СЕВЕРНЫЙ - ТАБАК ДЛЯ ДРУЗЕЙ</li>
+				<li class="slogan__item">СЕВЕРНЫЙ - ТАБАК ДЛЯ ДРУЗЕЙ</li>
+				<li class="slogan__item">severniy@rtc.tc 8 800 100 80 46</li>
+				<li class="slogan__item">ЖДЕМ ВАС В НАШИХ ГРУППАХ</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- 
+<div class="slogan__inner">
+  <ul class="slogan__list">
+    <li class="slogan__item">СЕВЕРНЫЙ - ТАБАК ДЛЯ ДРУЗЕЙ</li>
+				<li class="slogan__item">СЕВЕРНЫЙ - ТАБАК ДЛЯ ДРУЗЕЙ</li>
+				<li class="slogan__item">СЕВЕРНЫЙ - ТАБАК ДЛЯ ДРУЗЕЙ</li>
+				<li class="slogan__item">severniy@rtc.tc 8 800 100 80 46</li>
+				<li class="slogan__item">ЖДЕМ ВАС В НАШИХ ГРУППАХ</li>
+  </ul>
+</div>
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.slogan__inner {
+  width: 100%;
+  height: 51px;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slogan__list {
+  display: inline-block;
+  font-family: "Tahoma";
+  padding: 1em 1em 1em 100%;
+  margin: 0;
+  animation: scroll 30s infinite linear;
+}
+
+.slogan__list li {
+  display: inline-block;
+  margin-right: 40px;
+  font-weight: bold;
+  list-style: none;
+  color: #fff;
+  width: 210px;
+}
+
+.slogan__list li span {
+  margin: 0 10px;
+  font-weight: normal;
+  color: #aab9d1;
+}
+
+.slogan__list li span:nth-child(odd) {
+  position: relative;
+}
+
+.slogan__list li span:nth-child(odd):after {
+  position: absolute;
+  top: 0;
+  right: -14px;
+  content: "|";
+}
+
+.slogan__list li.up span:nth-child(odd) {
+  position: relative;
+  margin-left: 20px;
+}
+
+.slogan__list li.up span {
+  color: #00ca51;
+}
+
+.slogan__list li.up span:nth-child(odd):before {
+  position: absolute;
+  left: -14px;
+  top: 6px;
+  content: ' ';
+  border-width: 0 5px 9px 5px;
+  border-style: solid;
+  border-color: #00ca51 transparent;
+}
+
+.slogan__listli.down span:nth-child(odd) {
+  position: relative;
+  margin-left: 20px;
+}
+
+.slogan__list li.down span {
+  color: #f12424;
+}
+
+.slogan__list li.down span:nth-child(odd):before {
+  position: absolute;
+  left: -14px;
+  top: 6px;
+  content: ' ';
+  border-width: 9px 5px 0 5px;
+  border-style: solid;
+  border-color: #f12424 transparent;
+}
+
+.slogan__list li.round span:nth-child(odd) {
+  position: relative;
+  margin-left: 20px;
+}
+
+.slogan__list li.round span:nth-child(odd):before {
+  position: absolute;
+  left: -14px;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #aab9d1;
+  content: ' ';
+}
+
+-webkit-keyframes scroll 0% {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0)
+}
+
+-webkit-keyframes scroll 100% {
+  -webkit-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  transform: translate(-100%, 0)
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0)
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0)
+  }
+}
+https://ru.stackoverflow.com/questions/804658/Бегущая-строка-анимация
+
+
+
+
+
+
+
+
+
+ -->
+
+				<section class="product">
+	<div class="container">
+		<div class="product__inner">
+			<div class="product__content">
+				<h2 class="product__title title">О ПРОДУКТЕ</h2>
+				<p class="product__subtitle subtitle">
+					«Северный» – это готовый универсальный продукт как для домашних курильщиков, так и для
+					мастеров в заведениях.
+				</p>
+				<p class="product__subtitle subtitle">
+					Вам не нужно обладать особыми навыками забивки кальяна, чтобы ощутить его высокие
+					показатели вкуса, крепости и дымности.
+				</p>
+				<p class="product__subtitle subtitle">
+					Северный будет куриться приятно и комфортно в любом случае.
+				</p>
+			</div>
+			<div class="products">
+				<ul class="products__list">
+					<li class="products__item">
+						<img src="../img/product/production.svg" alt="" class="products__icon" />
+						<span class="products__title">СОБСТВЕННОЕ ПРОИЗВОДСТВО</span>
+
+						<p class="products__subtitle">в Екатеринбуре на фабрике полного цикла.</p>
+					</li>
+					<li class="products__item">
+						<img src="../img/product/material.svg" alt="" class="products__icon" />
+						<span class="products__title">КАЧЕСТВЕННОЕ НАТУРАЛЬНО СЫРЬЕ</span>
+						<p class="products__subtitle">Только лист Берли без блендов.</p>
+					</li>
+					<li class="products__item">
+						<img src="../img/product/assortment.svg" alt="" class="products__icon" />
+						<span class="products__title">ШИРОКИЙ АССОРТИМЕНТ</span>
+						<p class="products__subtitle">Cоло вкусы, готовые миксы и лимитированные коллекции.</p>
+					</li>
+					<li class="products__item">
+						<img src="../img/product/packing.svg" alt="" class="products__icon" />
+						<span class="products__title">УДОБНЫЕ ФАССТОВКИ</span>
+						<p class="products__subtitle">20, 40, 100, 250 г</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<script
+	type="text/javascript"
+	charset="utf-8"
+	async
+	src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1dd9307590707fbcab84fcf3498a275fe27f29d3fc624efa1774a456f1e4598e&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+></script>
+
+			</main>
+			<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__content">
+				<div class="footer__text">
+					<h2 class="footer__title title">ЕСТЬ ВОПРОСЫ ИЛИ ПРЕДЛОЖЕНИЯ?</h2>
+					<a class="footer__link">Пиши нам</a>
+				</div>
+				<div class="footer__conacts">
+					<a class="footer__email" href="mailto:severniy@rtc.tc">severniy@rtc.tc</a>
+					<a class="footer__phone" href="tel:+88001008046">8 800 100 80 46</a>
+				</div>
+			</div>
+			<div class="footer__social">
+				<div class="footer__wrapper">
+					<h2 class="footer__title title">ЖДЕМ ВАС В НАШИХ ГРУППАХ</h2>
+					<ul class="social__list">
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="../img/social/vk.png" alt="" class="social__icon" />
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="../img/social/telegam.png" alt="" class="social__icon" />
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="../img/social/instagram.png" alt="" class="social__icon" />
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="../img/social/tik-tok.png" alt="" class="social__icon" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__copyright">
+					<img src="../img//icons/footer-logo.png" alt="" class="footer__logo" />
+					<p class="copyright">
+						© Северный табак, 2021 г. Разработка сайта Index.Art Политика конфиденциальности
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+		</div>
+	</body>
+</html>
