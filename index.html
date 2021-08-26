@@ -17,7 +17,7 @@
 	<meta http-equiv="Reply-to" content="varlamov287842king@gmail.com" />
 	<meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate" />
 	<!-- Подключение иконки в браузере -->
-	<link type="image/x-icon" rel="shortcut icon" href="images/favicon.png" />
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
 	<!-- Подключаем стили проекта -->
 	<link type="text/css" rel="stylesheet" href="css/style.min.css" />
 </head>
@@ -26,43 +26,67 @@
 	<body>
 		<div class="wrapper">
 			<header class="header">
-	<div class="container">
-		<div class="header__inner">
-			<div class="logo">
-				<a class="logo__link" href="#">
-					<img
-						class="logo__icon"
-						src="img/icons/logo.svg"
-						width="188"
-						height="18"
-						alt="Логотип табака для кальянов табак для друзей северный"
-					/>
-				</a>
-			</div>
-			<nav class="menu">
-				<button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
-					<img src="img/icons/menu.svg" alt="" class="menu__icon" />
-				</button>
-				<ul class="menu__list" id="menu__list">
-					<li class="menu__item"><a href="#" class="menu__link menu__link--current">КАТАЛОГ</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">МИКСЫ</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">ГДЕ КУПИТЬ</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">ПАРТНЕРАМ</a></li>
-				</ul>
-			</nav>
-		</div>
+	<div class="header__open">
+		<span></span>
+		<span></span>
+		<span></span>
 	</div>
+	<img src="./img/icons/logo.svg" alt="logo" class="header__logo" />
+	<nav class="header__nav hidden">
+		<div class="header__close">X</div>
+		<ul class="header__list">
+			<li class="header__item">
+				<a href="#" class="header__link header__link--current">Каталог</a>
+			</li>
+			<li class="header__item"><a href="#" class="header__link">Миксы</a></li>
+			<li class="header__item">
+				<a href="#" class="header__link">Где купить</a>
+			</li>
+			<li class="header__item">
+				<a href="#" class="header__link">Партнерам</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="header__empty"></div>
 </header>
-
-<section class="intro">
-	<div class="swiper swiper-top">
+<!-- <section class="intro">
+	<div class="swiper slider-top">
 		<div class="swiper-wrapper">
-			<video autoplay muted controls src="./img/video/video.mp4"></video>
-			<video autoplay muted controls src="./img/video/video.mp4"></video>
-			<video autoplay muted controls src="./img/video/video.mp4"></video>
+			<div class="swiper-slide">
+				<video autoplay muted controls src="./img/video/video.mp4"></video>
+			</div>
+			<div class="swiper-slide">
+				<video autoplay muted controls src="./img/video/video.mp4"></video>
+			</div>
+			<div class="swiper-slide">
+				<video autoplay muted controls src="./img/video/video.mp4"></video>
+			</div>
 		</div>
 		<div class="swiper-button-next"></div>
 		<div class="swiper-button-prev"></div>
+	</div>
+</section> -->
+
+<section class="intro">
+	<div class="swiper slider-top" style="height: 815px; margin-bottom: 100px">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<video autoplay muted controls src="./img/video/video.mp4"></video>
+			</div>
+			<div class="swiper-slide">
+				<video autoplay muted controls src="./img/video/video.mp4"></video>
+			</div>
+			<div class="swiper-slide">
+				<video autoplay muted controls src="./img/video/video.mp4"></video>
+			</div>
+		</div>
+
+		<div class="swiper-button-prev">
+			<img src="./img/icons/arrow-left.svg" alt="" />
+		</div>
+		<div class="swiper-button-next">
+			<img src="./img/icons/arrow-right.svg" alt="" />
+		</div>
 	</div>
 </section>
 
@@ -188,7 +212,7 @@
 			<div class="swiper mySwiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<img src="./img/taste/алтайский-сбор.png" alt="" class="taste__image" />
+						<img src="./img/taste/алтайский-сбор.png" alt="" class="taste__image" />
 						<div class="swiper__text">
 							<h3 class="taste__title">алтайский сбор</h3>
 
@@ -291,112 +315,227 @@
 						</div>
 					</div>
 				</div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev">
+					<img src="./img/icons/arrow-left-black.svg" alt="" />
+				</div>
+				<div class="swiper-button-next">
+					<img src="./img/icons/arrow-right-black.svg" alt="" />
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-				<section class="bowl">
-	<div class="container">
-		<div class="bowl__inner">
-			<h2 class="bowl__title title">КАК ЗАБИТЬ</h2>
-			<ul class="bowl__list">
-				<li class="bowl__item">
-					<span class="bowl__subtitle">UPG</span>
-					<img src="./img/bowl/upg.png" alt="" class="bowl__icon" />
-					<ul class="tab-header">
-						<li class="tab-content__item js-tab-content" data-tab="1">
-							<span class="bowl__subtitle">UPG1</span>
-							<!-- <img src="./img/bowl/upg.png" alt="" class="bowl__icon" /> -->
-						</li>
-						<li class="tab-content__item js-tab-content" data-tab="2">
-							<span class="bowl__subtitle">UPG2</span>
-							<!-- <img src="./img/bowl/upg.png" alt="" class="bowl__icon" /> -->
-						</li>
-
-						<ul class="tab-header-btn">
-							<li class="tab-header__item js-tab-trigger" data-tab="1">ЛЕГКИЙ</li>
-							<li class="tab-header__item js-tab-trigger" data-tab="2">СРЕДНИЙ</li>
-							<li class="tab-header__item js-tab-trigger tab-header__item-disable">-</li>
-						</ul>
-					</ul>
-				</li>
-				<li class="bowl__item">
-					<span class="bowl__subtitle">UBIVASHKA</span>
-					<img src="./img/bowl/upg.png" alt="" class="bowl__icon" />
-					<ul class="tab-header">
-						<li class="tab-content__item js-tab-content" data-tab="3">
-							<span class="bowl__subtitle">UPG3</span>
-							<!-- <img src="./img/bowl/upg.png" alt="" class="bowl__icon" /> -->
-						</li>
-						<li class="tab-content__item js-tab-content" data-tab="4">
-							<span class="bowl__subtitle">UPG4</span>
-							<!-- <img src="./img/bowl/upg.png" alt="" class="bowl__icon" /> -->
-						</li>
-						<li class="tab-content__item js-tab-content" data-tab="5">
-							<span class="bowl__subtitle">UPG5</span>
-							<!-- <img src="./img/bowl/upg.png" alt="" class="bowl__icon" /> -->
-						</li>
-						<ul class="tab-header-btn">
-							<li class="tab-header__item js-tab-trigger active" data-tab="3">ЛЕГКИЙ</li>
-							<li class="tab-header__item js-tab-trigger" data-tab="4">СРЕДНИЙ</li>
-							<li class="tab-header__item js-tab-trigger" data-tab="5">КРЕПКИЙ</li>
-						</ul>
-					</ul>
-				</li>
-
-				<li class="bowl__item">
-					<span class="bowl__subtitle">TURKISH</span>
-					<img src="./img/bowl/upg.png" alt="" class="bowl__icon" />
-					<ul class="tab-header">
-						<li class="tab-content__item js-tab-content" data-tab="6">
-							<span class="bowl__subtitle">UPG6</span>
-							<!-- <img src="./img/bowl/upg.png" alt="" class="bowl__icon" /> -->
-						</li>
-						<li class="tab-content__item js-tab-content" data-tab="7">
-							<span class="bowl__subtitle">UPG7</span>
-							<!-- <img src="./img/bowl/upg.png" alt="" class="bowl__icon" /> -->
-						</li>
-						<li class="tab-content__item js-tab-content" data-tab="8">
-							<span class="bowl__subtitle">UPG8</span>
-							<!-- <img src="./img/bowl/upg.png" alt="" class="bowl__icon" /> -->
-						</li>
-						<ul class="tab-header-btn">
-							<li class="tab-header__item js-tab-trigger active" data-tab="6">ЛЕГКИЙ</li>
-							<li class="tab-header__item js-tab-trigger" data-tab="7">СРЕДНИЙ</li>
-							<li class="tab-header__item js-tab-trigger" data-tab="8">КРЕПКИЙ</li>
-						</ul>
-					</ul>
-				</li>
-				<li class="bowl__item">
-					<span class="bowl__subtitle">PHUNNEL</span>
-					<img src="./img/bowl/upg.png" alt="" class="bowl__icon" />
-					<ul class="tab-header">
-						<li class="tab-content__item js-tab-content" data-tab="6">
-							<span class="bowl__subtitle">UPG6</span>
-							<!-- <img src="./img/bowl/upg.png" alt="" class="bowl__icon" /> -->
-						</li>
-						<li class="tab-content__item js-tab-content" data-tab="7">
-							<span class="bowl__subtitle">UPG7</span>
-							<!-- <img src="./img/bowl/upg.png" alt="" class="bowl__icon" /> -->
-						</li>
-						<li class="tab-content__item js-tab-content" data-tab="8">
-							<span class="bowl__subtitle">UPG8</span>
-							<!-- <img src="./img/bowl/upg.png" alt="" class="bowl__icon" /> -->
-						</li>
-						<ul class="tab-header-btn">
-							<li class="tab-header__item js-tab-trigger active" data-tab="6">ЛЕГКИЙ</li>
-							<li class="tab-header__item js-tab-trigger" data-tab="7">СРЕДНИЙ</li>
-							<li class="tab-header__item js-tab-trigger" data-tab="8">КРЕПКИЙ</li>
-						</ul>
-					</ul>
-				</li>
-			</ul>
+				<div class="tabs">
+	<div class="upg">
+		<p class="upg__title">upg</p>
+		<div class="upg__content">
+			<img src="./img/upg.png" width="110px" height="125px" alt="photo" class="upg__img" />
+			<p class="upg__info upg-easy hidden">
+				Табак укладываем пушисто с легким отступом
+				<b>2-3мм</b>
+				от kaloud/фольги.
+				<br />
+				Верхний слой слегка приминаем. Чашу накрываем kaloud/фольгой.
+				<br />
+				Прогрев
+				<b>4-5 минут</b>
+			</p>
+			<p class="upg__info upg-medium hidden">
+				Табак укладывается в чашу пушисто
+				<b>в ровень</b>
+				> с бортом. Чашу накрываем kaloud/фольгой. Прогрев
+				<b>3-4 минуты.</b>
+			</p>
+			<div class="upg__buttons">
+				<label for="upg-easy">
+					<button class="level__btn" data-for="upg-easy" data-close="upg-medium">Легкий</button>
+				</label>
+				<label for="upg-medium">
+					<button class="level__btn" data-for="upg-medium" data-close="upg-easy">Средний</button>
+				</label>
+				<label class="level__btn disabled">-</label>
+			</div>
 		</div>
 	</div>
-</section>
+	<div class="ubivashka">
+		<p class="ubivashka__title">ubivashka</p>
+		<div class="ubivashka__content">
+			<img src="./img/upg.png" width="110px" height="125px" alt="photo" class="ubivashka__img" />
+			<p class="ubivashka__info ubivashka-easy hidden">
+				Табак укладываем пушисто с легким отступом
+				<b>2-3мм</b>
+				от kaloud/фольги.
+				<br />
+				Верхний слой слегка приминаем. Чашу накрываем kaloud/фольгой.
+				<br />
+				Прогрев
+				<b>4-5 минут</b>
+			</p>
+			<p class="ubivashka__info ubivashka-medium hidden">
+				Табак укладывается в чашу пушисто
+				<b>в ровень</b>
+				> с бортом. Чашу накрываем kaloud/фольгой. Прогрев
+				<b>3-4 минуты.</b>
+			</p>
+			<p class="ubivashka__info ubivashka-hard hidden">
+				Табак укладывается в чашу пушисто на 2/3 с отступом от kaloud/фольги Верхний слой
+				<b>слегка приминаем</b>
+				. Чашу накрываем kaloud/фольгой. Прогрев 4-5 минут.
+			</p>
+			<div class="ubivashka__buttons">
+				<label for="ubivashka-easy">
+					<button
+						class="level__btns"
+						data-for="ubivashka-easy"
+						data-close-1="ubivashka-hard"
+						data-close-2="ubivashka-medium"
+					>
+						Легкий
+					</button>
+				</label>
+				<label for="ubivashka-medium">
+					<button
+						class="level__btns"
+						data-for="ubivashka-medium"
+						data-close-1="ubivashka-easy"
+						data-close-2="ubivashka-hard"
+					>
+						Средний
+					</button>
+				</label>
+				<label for="ubivashka-hard">
+					<button
+						class="level__btns"
+						data-for="ubivashka-hard"
+						data-close-1="ubivashka-easy"
+						data-close-2="ubivashka-medium"
+					>
+						Крепкий
+					</button>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="turkish">
+		<p class="turkish__title">turkish</p>
+		<div class="turkish__content">
+			<img src="./img/upg.png" width="110px" height="125px" alt="photo" class="turkish__img" />
+			<p class="turkish__info turkish-easy hidden">
+				Табак укладываем пушисто с легким отступом
+				<b>2-3мм</b>
+				от kaloud/фольги.
+				<br />
+				Верхний слой слегка приминаем. Чашу накрываем kaloud/фольгой.
+				<br />
+				Прогрев
+				<b>4-5 минут</b>
+			</p>
+			<p class="turkish__info turkish-medium hidden">
+				Табак укладывается в чашу пушисто
+				<b>в ровень</b>
+				> с бортом. Чашу накрываем kaloud/фольгой. Прогрев
+				<b>3-4 минуты.</b>
+			</p>
+			<p class="turkish__info turkish-hard hidden">
+				Табак укладывается в чашу пушисто на 2/3 с отступом от kaloud/фольги Верхний слой
+				<b>слегка приминаем</b>
+				. Чашу накрываем kaloud/фольгой. Прогрев 4-5 минут.
+			</p>
+			<div class="turkish__buttons">
+				<label for="turkish-easy">
+					<button
+						class="level__btns"
+						data-for="turkish-easy"
+						data-close-1="turkish-hard"
+						data-close-2="turkish-medium"
+					>
+						Легкий
+					</button>
+				</label>
+				<label for="turkish-medium">
+					<button
+						class="level__btns"
+						data-for="turkish-medium"
+						data-close-1="turkish-easy"
+						data-close-2="turkish-hard"
+					>
+						Средний
+					</button>
+				</label>
+				<label for="turkish-hard">
+					<button
+						class="level__btns"
+						data-for="turkish-hard"
+						data-close-1="turkish-easy"
+						data-close-2="turkish-medium"
+					>
+						Крепкий
+					</button>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="phunnel">
+		<p class="phunnel__title">phunnel</p>
+		<div class="phunnel__content">
+			<img src="./img/upg.png" width="110px" height="125px" alt="photo" class="phunnel__img" />
+			<p class="phunnel__info phunnel-easy hidden">
+				Табак укладываем пушисто с легким отступом
+				<b>2-3мм</b>
+				от kaloud/фольги.
+				<br />
+				Верхний слой слегка приминаем. Чашу накрываем kaloud/фольгой.
+				<br />
+				Прогрев
+				<b>4-5 минут</b>
+			</p>
+			<p class="phunnel__info phunnel-medium hidden">
+				Табак укладывается в чашу пушисто
+				<b>в ровень</b>
+				> с бортом. Чашу накрываем kaloud/фольгой. Прогрев
+				<b>3-4 минуты.</b>
+			</p>
+			<p class="phunnel__info phunnel-hard hidden">
+				Табак укладывается в чашу пушисто на 2/3 с отступом от kaloud/фольги Верхний слой
+				<b>слегка приминаем</b>
+				. Чашу накрываем kaloud/фольгой. Прогрев 4-5 минут.
+			</p>
+			<div class="phunnel__buttons">
+				<label for="phunnel-easy">
+					<button
+						class="level__btns"
+						data-for="phunnel-easy"
+						data-close-1="phunnel-hard"
+						data-close-2="phunnel-medium"
+					>
+						Легкий
+					</button>
+				</label>
+				<label for="phunnel-medium">
+					<button
+						class="level__btns"
+						data-for="phunnel-medium"
+						data-close-1="phunnel-easy"
+						data-close-2="phunnel-hard"
+					>
+						Средний
+					</button>
+				</label>
+				<label for="phunnel-hard">
+					<button
+						class="level__btns"
+						data-for="phunnel-hard"
+						data-close-1="phunnel-easy"
+						data-close-2="phunnel-medium"
+					>
+						Крепкий
+					</button>
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
  <div class="map">
 	<div class="container">
 		<h2 class="map__title title">Где Купить</h2>
@@ -460,7 +599,7 @@
 	</div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 
