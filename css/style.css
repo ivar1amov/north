@@ -5,7 +5,7 @@
 /* ========== FONTS ========== */
 
 @font-face {
-  font-family: "SuisseIntl";
+  font-family: "SuisseIntl Book";
   src: url("../fonts/SuisseIntl/SuisseIntl-Book.eot");
   src: local("☺"), url("../fonts/SuisseIntl-Book.woff") format("woff"), url("../fonts/SuisseIntl/SuisseIntl-Book.woff2") format("woff2"), url("../fonts/SuisseIntl/SuisseIntl-Book.ttf") format("truetype"), url("../fonts/SuisseIntl/SuisseIntl-Book.svg") format("svg");
   font-weight: 400;
@@ -85,10 +85,18 @@
 }
 
 @font-face {
-  font-family: "Druk Text Wide Cyr";
+  font-family: "Druk Text Wide Cyr ";
   src: url("../fonts/Drag/DruckTextWide-Medium.eot");
   src: local("☺"), url("../fonts/Drag/DruckTextWide-Medium.woff") format("woff"), url("../fonts/Drag/DruckTextWide-BMedium.woff2") format("woff2"), url("../fonts/Drag/DruckTextWide-Medium.ttf") format("truetype"), url("../fonts/Drag/DruckTextWide-Medium.svg") format("svg");
   font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Druk Text Wide Cyr Bold";
+  src: url("../fonts/Drag/DrukTextWideCyr-Bold.eot");
+  src: local("☺"), url("../fonts/Drag/DrukTextWideCyr-Bold.woff") format("woff"), url("../fonts/Drag/DrukTextWideCyr-Bold.woff2") format("woff2"), url("../fonts/Drag/DrukTextWideCyr-Bold.ttf") format("truetype"), url("../fonts/Drag/DrukTextWideCyr-Bold.svg") format("svg");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -225,10 +233,9 @@ h6 {
 }
 
 .title {
-  font-family: "Druk Text Wide Cyr", sans-serif;
+  font-family: "Druk Text Wide Cyr Bold", sans-serif;
   font-size: 36px;
   font-weight: 900;
-  line-height: 1.2;
   text-align: left;
   text-transform: uppercase;
 }
@@ -237,6 +244,7 @@ h6 {
   font-size: 14px;
   font-weight: 400;
   text-align: left;
+  line-height: 1.14;
 }
 
 .header {
@@ -318,6 +326,17 @@ button.level__btn.active {
   height: auto;
 }
 
+video {
+  height: auto;
+  position: relative;
+}
+
+.video-music {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
 /* ========== MAIN ========== */
 
 /* ========== FOOTER ========== */
@@ -358,11 +377,11 @@ button.level__btn.active {
 .footer__title {
   margin-bottom: 20px;
   max-width: 435px;
-  font-family: "Druk Cyr", sans-serif;
+  font-family: "Druk Text Wide Cyr Bold", sans-serif;
 }
 
 .footer__link {
-  font-family: "Druk Text Wide Cyr", sans-serif;
+  font-family: "Druk Text Wide Cyr Bold", sans-serif;
   font-size: 18px;
   font-weight: 900;
   line-height: 1.2;
@@ -407,7 +426,7 @@ button.level__btn.active {
 
 .copyright {
   line-height: 13px;
-  text-align: left;
+  text-align: center;
   max-width: 360px;
 }
 
@@ -1303,7 +1322,7 @@ button.swiper-pagination-bullet {
 }
 
 .slogan__item {
-  font-family: "Druk Text Wide", sans-serif;
+  font-family: "Druk Text Wide Cyr Bold", sans-serif;
   font-size: 22px;
   font-weight: 900;
   line-height: 1.375;
@@ -1346,8 +1365,7 @@ button.swiper-pagination-bullet {
 }
 
 .product__title {
-  padding-bottom: 31px;
-  line-height: 1.2;
+  padding-bottom: 29px;
 }
 
 .product__subtitle + .product__subtitle {
@@ -1384,8 +1402,10 @@ button.swiper-pagination-bullet {
 .product .products__title {
   font-size: 12px;
   font-weight: 700;
-  line-height: 13px;
+  line-height: 1.08;
   text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 2px;
 }
 
 .product .products__subtitle {
@@ -1462,7 +1482,7 @@ button.swiper-pagination-bullet {
 }
 
 .taste__title {
-  font-family: "Druk Text Wide Cyr", sans-serif;
+  font-family: "Druk Text Wide Cyr Bold", sans-serif;
   font-size: 18px;
   font-weight: 900;
   line-height: 24px;
@@ -1533,6 +1553,14 @@ video {
   padding-bottom: 40px;
 }
 
+.video__wrapper {
+  position: relative;
+}
+
+.video-music {
+  position: absolute;
+}
+
 .bowl {
   padding-bottom: 80px;
 }
@@ -1549,7 +1577,7 @@ video {
 }
 
 .bowl__item {
-  max-height: 275px;
+  height: 274px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1643,7 +1671,7 @@ video {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
-  font-family: "Druk Cyr", sans-serif;
+  font-family: "Druk Text Wide Cyr Bold", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 900;
@@ -1726,128 +1754,6 @@ video {
   left: 20px;
 }
 
-.tabs {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 240px);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  grid-gap: 56px;
-}
-
-.upg,
-.ubivashka,
-.turkish,
-.phunnel {
-  width: 240px;
-  min-height: 274px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.upg__title,
-.ubivashka__title,
-.turkish__title,
-.phunnel__title {
-  font-family: "Druk Cyr Heavy";
-  font-size: 24px;
-  line-height: 17px;
-  color: #cccccc;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.upg__content,
-.ubivashka__content,
-.turkish__content,
-.phunnel__content {
-  width: 100%;
-  height: 100%;
-  padding-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.upg__img,
-.ubivashka__img,
-.turkish__img,
-.phunnel__img {
-  height: 125px;
-}
-
-.upg__info.visible,
-.ubivashka__info.visible,
-.turkish__info.visible,
-.phunnel__info.visible {
-  display: block;
-}
-
-.upg__info.hidden,
-.ubivashka__info.hidden,
-.turkish__info.hidden,
-.phunnel__info.hidden {
-  display: none;
-}
-
-.upg__buttons,
-.ubivashka__buttons,
-.turkish__buttons,
-.phunnel__buttons {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.level__btn,
-.level__btns {
-  font-family: "SuisseIntl-Regular";
-  font-size: 16px;
-  line-height: 18px;
-  color: #000000;
-  background: none;
-  border: 1px solid #000000;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 4px;
-}
-
-.level__btn:hover,
-.level__btns:hover {
-  cursor: pointer;
-}
-
-.level__btn.disabled,
-.level__btns.disabled {
-  width: 70px;
-  cursor: default;
-  text-align: center;
-}
-
 .bowl__text {
   max-width: 217px;
 }
@@ -1893,7 +1799,7 @@ video {
 }
 
 .bowl__icon {
-  height: 120px;
+  height: 175px;
   width: 120px;
 }
 
@@ -1927,7 +1833,44 @@ li.tab-content__item.js-tab-content.active {
   height: 208px;
 }
 
+li.tab-header__item.js-tab-trigger.active {
+  background-color: #50ad98;
+  color: white;
+  border: none;
+}
+
+.upg > li.tab-header__item.js-tab-trigger.active {
+  background-color: #50ad98;
+  color: white;
+  border: none;
+  position: relative;
+}
+
+li.tab-header__item.js-tab-trigger.active::after {
+  content: " ";
+  position: relative;
+  background-color: #50ad98;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  display: block;
+  height: 25px;
+  width: 100%;
+}
+
 /* ========== MEDIA QUERIES ========== */
+
+.footer {
+  margin-top: 35px;
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+  overflow: hidden;
+}
 
 @media (max-width: 1152px) {
   .header {
@@ -1962,6 +1905,32 @@ li.tab-content__item.js-tab-content.active {
 
   .footer__text {
     margin-bottom: 15px;
+  }
+
+  .footer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .footer__content {
+    padding-bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__text {
+    margin-bottom: 15px;
+    justify-items: center;
+  }
+
+  .footer__title {
+    text-align: center;
   }
 }
 
@@ -2075,11 +2044,12 @@ li.tab-content__item.js-tab-content.active {
   }
 
   .header__link {
-    font-family: "SuisseIntl", sans-serif;
+    font-family: "SuisseIntl Book", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 1.14;
+    text-transform: uppercase;
   }
 
   .header__link--current {
@@ -2098,6 +2068,10 @@ li.tab-content__item.js-tab-content.active {
 
   .taste__image {
     width: 220px;
+  }
+
+  .form__title {
+    font-size: 30px;
   }
 }
 
@@ -2222,5 +2196,109 @@ li.tab-content__item.js-tab-content.active {
 
   .footer__title {
     text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
+  .footer__title {
+    font-size: 15px;
+  }
+
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer__text {
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .footer__content {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .footer__logo {
+    max-width: 90%;
+  }
+
+  .footer__copyright {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+
+  .footer__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .form__title {
+    font-size: 20px;
+  }
+
+  .bank__title {
+    font-size: 30px;
   }
 }

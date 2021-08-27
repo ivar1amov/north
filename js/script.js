@@ -176,3 +176,47 @@ jsTriggers.forEach(function(trigger) {
 	 content.classList.add('active'); // 4
   });
 });
+
+
+
+
+
+var video;
+var display;
+
+window.onload = function() {
+	video = document.getElementById("video-item");
+};
+
+function play() {
+    video.play();
+}
+
+function pause() {
+    video.pause();
+}
+
+function stop() {
+    video.pause();
+    video.currentTime = 0;
+}
+
+
+
+function mute_and_unmute(){
+	let video = document.getElemenntById('video-item')
+	document.getElementById('video-item').muted = true;
+}
+
+
+
+function mute() {
+	var video = document.getElementById("video-item");
+
+	if (!video.muted) {
+		 video.muted = true;
+	} else {
+		 // video.muted == false <- wrong use of equality operator
+		 video.muted = false;
+	}
+}
