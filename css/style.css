@@ -5,7 +5,7 @@
 /* ========== FONTS ========== */
 
 @font-face {
-  font-family: "SuisseIntl Book";
+  font-family: "SuisseIntl";
   src: url("../fonts/SuisseIntl/SuisseIntl-Book.eot");
   src: local("☺"), url("../fonts/SuisseIntl-Book.woff") format("woff"), url("../fonts/SuisseIntl/SuisseIntl-Book.woff2") format("woff2"), url("../fonts/SuisseIntl/SuisseIntl-Book.ttf") format("truetype"), url("../fonts/SuisseIntl/SuisseIntl-Book.svg") format("svg");
   font-weight: 400;
@@ -344,6 +344,7 @@ video {
 .footer {
   background-color: #000000;
   color: #ffffff;
+  padding-top: 0 !important;
 }
 
 .footer__inner {
@@ -1487,6 +1488,7 @@ button.swiper-pagination-bullet {
   font-weight: 900;
   line-height: 24px;
   text-align: center;
+  color: black;
   text-transform: uppercase;
 }
 
@@ -1550,6 +1552,7 @@ video {
 }
 
 .map__title {
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -2044,7 +2047,7 @@ li.tab-header__item.js-tab-trigger.active::after {
   }
 
   .header__link {
-    font-family: "SuisseIntl Book", sans-serif;
+    font-family: "SuisseIntl", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
